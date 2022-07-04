@@ -23,7 +23,6 @@ const {getLogs} = require('./readLog')
 
 const getScoreboard = async() => {
     const currentGame = await getLogs()
-    console.log(currentGame)
   let scoreboard = []
       currentGame.filter(el =>{
            if(el.match('RoundsPlayed')){
@@ -38,7 +37,6 @@ const getScoreboard = async() => {
   finalRound.forEach((el, i )=>{
     result[el] =finalScore[i]
   })
-console.log(result)
  return (result)
 }
 

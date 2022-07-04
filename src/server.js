@@ -9,6 +9,7 @@ server.use(express.json());
 
 server.get("/", async(req, res) => {
     const logs = await getLogs()
+    console.log(logs+'ruta')
       res.json(logs);
   });
 
