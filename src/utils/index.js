@@ -29,7 +29,9 @@ const getScoreboard = async() => {
            scoreboard.push(el)
   }
 })
-  let finalScore = scoreboard.map(el=>el.slice(42,46)) 
+console.log(scoreboard)
+  let finalScore = scoreboard.map(el=>el.slice(42,47))
+  console.log(finalScore) 
   let finalRound = scoreboard.map(el=>el.slice(78.80))
 
   const result = {}
